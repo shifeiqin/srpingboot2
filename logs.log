@@ -3089,3 +3089,44 @@ java.lang.NullPointerException: null
 2018-07-06 17:01:10.381  INFO 7848 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
 2018-07-06 17:01:10.385  INFO 7848 --- [http-nio-8888-exec-1] com.common.controller.CommonController   : com.common.controller.CommonControllerdemo:test
 2018-07-06 17:01:13.377  INFO 7848 --- [pool-3-thread-1] com.SchedulingConfig                     : 执行定时任务吧
+2018-07-06 17:01:23.377  INFO 7848 --- [pool-3-thread-1] com.SchedulingConfig                     : 执行定时任务吧
+2018-07-06 17:01:28.302  INFO 7848 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-06 17:01:28.303  INFO 7848 --- [RMI TCP Connection(12)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5639eb2: startup date [Fri Jul 06 17:01:01 CST 2018]; root of context hierarchy
+2018-07-06 17:01:28.314  INFO 7848 --- [RMI TCP Connection(12)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-06 17:01:28.314  INFO 7848 --- [RMI TCP Connection(12)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-06 17:01:28.316  INFO 7848 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-06 17:01:28.318  INFO 7848 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2018-07-06 17:01:28.335  INFO 7848 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2018-07-06 17:04:39.340  INFO 5900 --- [main] com.demo.JunitTest                       : Starting JunitTest on FayQ-PC with PID 5900 (started by FayQ in F:\qsf\JAVA\stsWorkspace\srpingboot)
+2018-07-06 17:04:39.342  INFO 5900 --- [main] com.demo.JunitTest                       : No active profile set, falling back to default profiles: default
+2018-07-06 17:04:39.472  INFO 5900 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b58b9e9: startup date [Fri Jul 06 17:04:39 CST 2018]; root of context hierarchy
+2018-07-06 17:04:42.362  INFO 5900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c26e9eef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06 17:04:42.712  INFO 5900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-07-06 17:04:43.089  INFO 5900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-07-06 17:04:43.182  INFO 5900 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-06 17:04:43.215  INFO 5900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-06 17:04:43.365  INFO 5900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.14.Final}
+2018-07-06 17:04:43.368  INFO 5900 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-07-06 17:04:43.417  INFO 5900 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-07-06 17:04:43.582  INFO 5900 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-07-06 17:04:44.494  INFO 5900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-07-06 17:04:45.817  INFO 5900 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6b58b9e9: startup date [Fri Jul 06 17:04:39 CST 2018]; root of context hierarchy
+2018-07-06 17:04:45.894  WARN 5900 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-07-06 17:04:45.949  INFO 5900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/common/test],methods=[GET]}" onto public java.lang.String com.common.controller.CommonController.test()
+2018-07-06 17:04:45.953  INFO 5900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/get/{id}],methods=[GET]}" onto public com.demo.entities.User com.demo.controller.DemoController.get(java.lang.Integer)
+2018-07-06 17:04:45.954  INFO 5900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/test],methods=[GET]}" onto public java.lang.String com.demo.controller.DemoController.test()
+2018-07-06 17:04:45.958  INFO 5900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-06 17:04:45.959  INFO 5900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-06 17:04:46.024  INFO 5900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06 17:04:46.024  INFO 5900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06 17:04:46.093  INFO 5900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06 17:04:46.155  WARN 5900 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-07-06 17:04:46.619  INFO 5900 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-07-06 17:04:46.658  INFO 5900 --- [pool-1-thread-1] com.SchedulingConfig                     : 执行定时任务吧
+2018-07-06 17:04:46.661  INFO 5900 --- [main] com.demo.JunitTest                       : Started JunitTest in 8.01 seconds (JVM running for 9.082)
+2018-07-06 17:04:46.818  INFO 5900 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6b58b9e9: startup date [Fri Jul 06 17:04:39 CST 2018]; root of context hierarchy
+2018-07-06 17:04:46.825  INFO 5900 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-06 17:04:46.827  INFO 5900 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-07-06 17:04:46.853  INFO 5900 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
