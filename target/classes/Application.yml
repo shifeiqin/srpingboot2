@@ -1,0 +1,21 @@
+server:
+  port: 8888
+logging:
+  level:
+    root: info
+  path: logs/
+  file: logs.log
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect  #不加这句则默认为myisam引擎
+  datasource:
+    url : jdbc:mysql://localhost:3336/demo
+    username : root
+    password : myoa888
+    driverClassName : com.mysql.jdbc.Driver
