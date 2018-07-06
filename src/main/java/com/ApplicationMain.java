@@ -1,10 +1,10 @@
-package admin;
+package com;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * 
- * @Title: DemoApplication.java
+ * @Title: ApplicationMain.java
  * @Package admin
  * @Description: TODO(Spring Boot核心注解，用于开启自动配置)
  * @author FayQ
@@ -13,9 +13,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @email 1010046660@qq.com
  */
 @SpringBootApplication 
-public class DemoApplication {
+public class ApplicationMain {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(ApplicationMain.class, args);
     }
 }
