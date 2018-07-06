@@ -2,6 +2,7 @@ package com;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 /**
  * 
  * @Title: ApplicationMain.java
@@ -13,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @email 1010046660@qq.com
  */
 @SpringBootApplication 
+@ServletComponentScan
 public class ApplicationMain {
 
     public static void main(String[] args) {

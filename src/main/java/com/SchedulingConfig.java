@@ -26,7 +26,7 @@ public class SchedulingConfig {
 	 * 1.@Scheduled(fixedRate = 5000) //通过@Scheduled声明该方法是计划任务，使用fixedRate属性每隔固定时间5秒执行一次 
 	 * 2.@Scheduled(cron = “0 0/10 * * * ?”) //使用cron属性可按照指定时间执行，本例指的是每10分钟执行一次；
 	 */
-	@Scheduled(fixedRate=10000)
+	@Scheduled(fixedRate=1000000)
 	public void test() {
 		log.info("执行定时任务吧");
 	}

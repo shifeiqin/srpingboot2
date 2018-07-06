@@ -1,9 +1,13 @@
 package com.common.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,4 +39,18 @@ public class CommonController {
 		log.info(this.getClass().getName()+"demo:test");
 		return demoService.test();
 	}
+	
+	@GetMapping("/login")
+    public String login(@RequestParam(value="name") String name,@RequestParam(value="pwd") String pwd,HttpServletRequest request) {
+        HttpSession session = request.getSession();
+
+        if(name.equals("root")&&pwd.equals("root")) {
+            User user = new User();
+            user.setName(name);
+            session.setAttribute("user",user);
+            return "登录成功";
+        } else {
+            return "用户名或密码错误!";
+        }
+    }
 }
